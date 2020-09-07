@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+     Velocidade do carro: <input type="number" name="txtvel" id="txtvel">km/h 
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res"></div>
+    <p id="els"></p>
+    <script>
+        function verif(){
+            var caixa = document.querySelector('input#txtvel')
+            var res = document.getElementById('res')
+            var els = document.getElementById('els')
+            var vel = Number(caixa.value)
+            res.innerHTML = (`<p>Sua velocidade é de <strong>${vel}km/h</strong></p>`)
+            if (vel > 60){
+                res.innerHTML += `<p>Tá rápido demaisss!<strong> MULTADO!!!</strong></p>`
+            } else {
+                els.innerHTML = ('Muito bem!')
+            }
+        }
+    </script>
+</body>
+</html>

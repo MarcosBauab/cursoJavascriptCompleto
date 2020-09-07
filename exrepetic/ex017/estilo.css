@@ -1,0 +1,31 @@
+body{
+    background: #7FFFD4;
+    font-family: Helvetica;
+    font: normal 18pt;
+}
+header{
+    text-align: center;
+}
+section{
+    background: rgb(236, 226, 226);
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 5px 10px black;
+}
+footer{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+select#sel{
+    border-radius: 1px;
+}
+div#primeira{
+    padding: 10px;
+}
+input#but{
+    border-radius: 10px;
+    font-family: Roboto sans-serif;
+}

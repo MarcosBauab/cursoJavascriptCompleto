@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figurinha</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Star_icon_stylized.svg" >
+    <style>
+        head{ 
+        
+        }
+        body{
+            font: normal 25pt Times;
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Me conta seu nome :')
+        var duvi = window.confirm('Ta gostando do site ? ')
+        duvi == true ? alert(`Muito obrigado ${nome}, você é muito gentil!`) : alert('VOCÊ SERÁ HACKEADO, TO DE OLHO!')
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras!</br>`)
+        document.write(`Não gosto de letras minúsculas, se liga: ${nome.toUpperCase()}`)
+    </script>
+</body>
+</html>

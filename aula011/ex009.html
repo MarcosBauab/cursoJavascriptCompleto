@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX9</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    Escreva seu super país aqui: <input type="text" name="txtnal" id="txtnal">
+    <input type="button" value="Testar" onclick="teste()">
+    <p id="res"></p>
+    <script>
+        function teste(){
+        var nac = document.querySelector('input#txtnal')
+        var nac2 = String(nac.value)
+        var res = document.getElementById('res')
+            if (nac2 == 'Brasil'){
+                res.innerHTML = ('ENTÃO VOCÊ É <strong>BR</strong> NÉ!')
+            } else {
+                res.innerHTML = ('Estrangeiro!')
+            }
+        }
+    </script>
+</body>
+</html>
